@@ -61,7 +61,7 @@ protected:
     /*
      * Member Declarations
      */
-    touchgfx::Image backgroundImage;
+    touchgfx::Image background;
     touchgfx::TextArea textAreaHourCaption;
     touchgfx::TextAreaWithOneWildcard textAreaHour;
     touchgfx::TextArea textAreaMinuteCaption;
@@ -72,7 +72,7 @@ protected:
     touchgfx::Button buttonMinuteDown;
     touchgfx::ButtonWithLabel buttonSaveHour;
     touchgfx::ButtonWithLabel buttonSaveMinute;
-    touchgfx::ButtonWithLabel buttonSaveClock;
+    touchgfx::ButtonWithLabel buttonClock;
 
     /*
      * Wildcard Buffers

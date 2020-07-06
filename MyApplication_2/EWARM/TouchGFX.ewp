@@ -1147,12 +1147,15 @@
                 <name>$PROJ_DIR$/../TouchGFX/generated/gui_generated/src/screen1_screen/Screen1ViewBase.cpp</name>
               </file>
             </group>
+            <group>
+              <name>screen2_screen</name>
+              <file>
+                <name>$PROJ_DIR$/../TouchGFX/generated/gui_generated/src/screen2_screen/Screen2ViewBase.cpp</name>
+              </file>
+            </group>
           </group>
           <group>
             <name>images</name>
-            <file>
-              <name>$PROJ_DIR$/../TouchGFX/generated/images/src/background.cpp</name>
-            </file>
             <file>
               <name>$PROJ_DIR$/../TouchGFX/generated/images/src/background_Screen1.cpp</name>
             </file>
@@ -1218,6 +1221,15 @@
             </file>
             <file>
               <name>$PROJ_DIR$/../TouchGFX/gui/src/screen1_screen/Screen1View.cpp</name>
+            </file>
+          </group>
+          <group>
+            <name>screen2_screen</name>
+            <file>
+              <name>$PROJ_DIR$/../TouchGFX/gui/src/screen2_screen/Screen2Presenter.cpp</name>
+            </file>
+            <file>
+              <name>$PROJ_DIR$/../TouchGFX/gui/src/screen2_screen/Screen2View.cpp</name>
             </file>
           </group>
         </group>

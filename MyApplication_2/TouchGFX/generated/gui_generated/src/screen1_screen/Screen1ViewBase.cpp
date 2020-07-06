@@ -10,8 +10,8 @@ Screen1ViewBase::Screen1ViewBase() :
     buttonCallback(this, &Screen1ViewBase::buttonCallbackHandler)
 {
 
-    backgroundImage.setXY(0, 0);
-    backgroundImage.setBitmap(touchgfx::Bitmap(BITMAP_BACKGROUND_SCREEN1_ID));
+    background.setXY(0, 0);
+    background.setBitmap(touchgfx::Bitmap(BITMAP_BACKGROUND_SCREEN1_ID));
 
     textAreaHourCaption.setPosition(86, 46, 85, 24);
     textAreaHourCaption.setColor(touchgfx::Color::getColorFrom24BitRGB(171, 171, 171));
@@ -33,15 +33,15 @@ Screen1ViewBase::Screen1ViewBase() :
     textAreaMinute.setPosition(311, 70, 83, 50);
     textAreaMinute.setColor(touchgfx::Color::getColorFrom24BitRGB(171, 171, 171));
     textAreaMinute.setLinespacing(0);
-    Unicode::snprintf(textAreaMinuteBuffer, TEXTAREAMINUTE_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID11).getText());
+    Unicode::snprintf(textAreaMinuteBuffer, TEXTAREAMINUTE_SIZE, "%s", touchgfx::TypedText(T_SINGLEUSEID6).getText());
     textAreaMinute.setWildcard(textAreaMinuteBuffer);
-    textAreaMinute.setTypedText(touchgfx::TypedText(T_SINGLEUSEID10));
+    textAreaMinute.setTypedText(touchgfx::TypedText(T_SINGLEUSEID5));
 
     buttonHourUp.setXY(184, 51);
     buttonHourUp.setBitmaps(touchgfx::Bitmap(BITMAP_UP_ARROW_ID), touchgfx::Bitmap(BITMAP_UP_ARROW_PRESSED_ID));
     buttonHourUp.setAction(buttonCallback);
 
-    buttonHourDown.setXY(184, 95);
+    buttonHourDown.setXY(184, 93);
     buttonHourDown.setBitmaps(touchgfx::Bitmap(BITMAP_DOWN_ARROW_ID), touchgfx::Bitmap(BITMAP_DOWN_ARROW_PRESSED_ID));
     buttonHourDown.setAction(buttonCallback);
 
@@ -56,24 +56,25 @@ Screen1ViewBase::Screen1ViewBase() :
     buttonSaveHour.setXY(80, 137);
     buttonSaveHour.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
     buttonSaveHour.setLabelText(touchgfx::TypedText(T_SINGLEUSEID7));
-    buttonSaveHour.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(42, 42, 42));
+    buttonSaveHour.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(66, 66, 66));
     buttonSaveHour.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(166, 166, 166));
     buttonSaveHour.setAction(buttonCallback);
 
     buttonSaveMinute.setXY(303, 137);
     buttonSaveMinute.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
     buttonSaveMinute.setLabelText(touchgfx::TypedText(T_SINGLEUSEID8));
-    buttonSaveMinute.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(42, 42, 42));
+    buttonSaveMinute.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(66, 66, 66));
     buttonSaveMinute.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(166, 166, 166));
     buttonSaveMinute.setAction(buttonCallback);
 
-    buttonSaveClock.setXY(192, 204);
-    buttonSaveClock.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
-    buttonSaveClock.setLabelText(touchgfx::TypedText(T_SINGLEUSEID9));
-    buttonSaveClock.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(42, 42, 42));
-    buttonSaveClock.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(166, 166, 166));
+    buttonClock.setXY(192, 204);
+    buttonClock.setBitmaps(touchgfx::Bitmap(BITMAP_BTN_ROUND_ID), touchgfx::Bitmap(BITMAP_BTN_ROUND_PRESSED_ID));
+    buttonClock.setLabelText(touchgfx::TypedText(T_SINGLEUSEID9));
+    buttonClock.setLabelColor(touchgfx::Color::getColorFrom24BitRGB(66, 66, 66));
+    buttonClock.setLabelColorPressed(touchgfx::Color::getColorFrom24BitRGB(166, 166, 166));
+    buttonClock.setAction(buttonCallback);
 
-    add(backgroundImage);
+    add(background);
     add(textAreaHourCaption);
     add(textAreaHour);
     add(textAreaMinuteCaption);
@@ -84,7 +85,7 @@ Screen1ViewBase::Screen1ViewBase() :
     add(buttonMinuteDown);
     add(buttonSaveHour);
     add(buttonSaveMinute);
-    add(buttonSaveClock);
+    add(buttonClock);
 }
 
 void Screen1ViewBase::setupScreen()
@@ -135,5 +136,12 @@ void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //When buttonSaveMinute clicked call virtual function
         //Call buttonSaveMinuteClicked
         buttonSaveMinuteClicked();
+    }
+    else if (&src == &buttonClock)
+    {
+        //InteractionButtonClock
+        //When buttonClock clicked change screen to Screen2
+        //Go to Screen2 with screen transition towards North
+        application().gotoScreen2ScreenCoverTransitionNorth();
     }
 }

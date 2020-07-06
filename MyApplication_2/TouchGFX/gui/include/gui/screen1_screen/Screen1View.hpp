@@ -15,7 +15,6 @@ public:
     virtual void buttonHourDownClicked();
     virtual void buttonMinuteUpClicked();
     virtual void buttonMinuteDownClicked();
-
 protected:
     int16_t hour;
     int16_t minute;

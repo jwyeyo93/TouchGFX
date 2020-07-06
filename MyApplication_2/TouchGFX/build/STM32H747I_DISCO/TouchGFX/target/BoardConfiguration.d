@@ -41,12 +41,17 @@ TouchGFX/build/STM32H747I_DISCO/TouchGFX/target/BoardConfiguration.o: \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/common/AbstractPartition.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/MVPHeap.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/CoverTransition.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/containers/Container.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/EasingEquations.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp \
  TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/MVPApplication.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/View.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Screen.hpp \
- Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/containers/Container.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/JSMOCHelper.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/Presenter.hpp \
  TouchGFX/gui/include/gui/model/Model.hpp \
@@ -55,12 +60,30 @@ TouchGFX/build/STM32H747I_DISCO/TouchGFX/target/BoardConfiguration.o: \
  TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp \
  TouchGFX/gui/include/gui/model/ModelListener.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
- Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Widget.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
+ TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp \
+ TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp \
+ TouchGFX/gui/include/gui/screen2_screen/Screen2Presenter.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Renderer.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/canvas_widget_renderer/RenderingBuffer.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Scanline.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/BoardConfiguration.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/GPIO.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
@@ -265,6 +288,18 @@ Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/MVPHeap.hpp:
 
 Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp:
 
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/CoverTransition.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/containers/Container.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/EasingEquations.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/SnapshotWidget.hpp:
+
 TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
 
 TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
@@ -274,8 +309,6 @@ Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/MVPApplication.hpp:
 Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/View.hpp:
 
 Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/Screen.hpp:
-
-Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/containers/Container.hpp:
 
 Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/JSMOCHelper.hpp:
 
@@ -293,8 +326,6 @@ TouchGFX/gui/include/gui/model/ModelListener.hpp:
 
 Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 
-Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Widget.hpp:
-
 Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 
 Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
@@ -304,6 +335,44 @@ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 
 Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
+
+TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp:
+
+TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp:
+
+TouchGFX/gui/include/gui/screen2_screen/Screen2Presenter.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/canvas/Circle.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Renderer.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/canvas_widget_renderer/RenderingBuffer.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Scanline.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/mixins/MoveAnimator.hpp:
 
 Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/BoardConfiguration.hpp:
 

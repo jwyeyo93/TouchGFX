@@ -7,16 +7,15 @@
 #include <touchgfx/lcd/LCD.hpp>
 #include <touchgfx/Bitmap.hpp>
 
-const uint16_t BITMAP_BACKGROUND_ID = 0;
-const uint16_t BITMAP_BACKGROUND_SCREEN1_ID = 1;
-const uint16_t BITMAP_BACKGROUND_SCREEN2_ID = 2;
-const uint16_t BITMAP_BTN_ROUND_ID = 3;
-const uint16_t BITMAP_BTN_ROUND_PRESSED_ID = 4;
-const uint16_t BITMAP_CONFIGURATION_ID = 5;
-const uint16_t BITMAP_DOWN_ARROW_ID = 6;
-const uint16_t BITMAP_DOWN_ARROW_PRESSED_ID = 7;
-const uint16_t BITMAP_UP_ARROW_ID = 8;
-const uint16_t BITMAP_UP_ARROW_PRESSED_ID = 9;
+const uint16_t BITMAP_BACKGROUND_SCREEN1_ID = 0;
+const uint16_t BITMAP_BACKGROUND_SCREEN2_ID = 1;
+const uint16_t BITMAP_BTN_ROUND_ID = 2;
+const uint16_t BITMAP_BTN_ROUND_PRESSED_ID = 3;
+const uint16_t BITMAP_CONFIGURATION_ID = 4;
+const uint16_t BITMAP_DOWN_ARROW_ID = 5;
+const uint16_t BITMAP_DOWN_ARROW_PRESSED_ID = 6;
+const uint16_t BITMAP_UP_ARROW_ID = 7;
+const uint16_t BITMAP_UP_ARROW_PRESSED_ID = 8;
 
 namespace BitmapDatabase
 {
