@@ -8,6 +8,12 @@ Screen1View::Screen1View()
 void Screen1View::setupScreen()
 {
     Screen1ViewBase::setupScreen();
+
+    hour = presenter->getHour();
+    minute = presenter->getMinute();
+
+    Unicode::snprintf(textAreaHourBuffer, TEXTAREAHOUR_SIZE, "%02d", hour);
+    Unicode::snprintf(textAreaMinuteBuffer, TEXTAREAMINUTE_SIZE, "%02d", minute);
 }
 
 void Screen1View::tearDownScreen()

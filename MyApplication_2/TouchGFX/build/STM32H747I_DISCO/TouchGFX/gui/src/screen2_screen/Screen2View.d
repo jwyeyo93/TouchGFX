@@ -42,6 +42,7 @@ TouchGFX/build/STM32H747I_DISCO/TouchGFX/gui/src/screen2_screen/Screen2View.o: \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/Presenter.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/MVPHeap.hpp \
  TouchGFX/gui/include/gui/model/Model.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/types.hpp \
  TouchGFX/gui/include/gui/screen2_screen/Screen2Presenter.hpp \
  TouchGFX/gui/include/gui/model/ModelListener.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
@@ -154,6 +155,8 @@ Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/Presenter.hpp:
 Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/MVPHeap.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/types.hpp:
 
 TouchGFX/gui/include/gui/screen2_screen/Screen2Presenter.hpp:
 

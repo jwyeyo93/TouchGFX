@@ -55,6 +55,7 @@ TouchGFX/build/STM32H747I_DISCO/TouchGFX/target/BoardConfiguration.o: \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/JSMOCHelper.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/Presenter.hpp \
  TouchGFX/gui/include/gui/model/Model.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/types.hpp \
  TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
  TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp \
@@ -315,6 +316,8 @@ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/JSMOCHelper.hpp:
 Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/Presenter.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/types.hpp:
 
 TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:
 

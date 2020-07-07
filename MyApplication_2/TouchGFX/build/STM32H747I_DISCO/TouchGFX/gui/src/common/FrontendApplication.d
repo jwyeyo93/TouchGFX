@@ -39,7 +39,8 @@ TouchGFX/build/STM32H747I_DISCO/TouchGFX/gui/src/common/FrontendApplication.o: \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/JSMOCHelper.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/Presenter.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/MVPHeap.hpp \
- TouchGFX/gui/include/gui/model/Model.hpp
+ TouchGFX/gui/include/gui/model/Model.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/types.hpp
 
 TouchGFX/gui/include/gui/common/FrontendApplication.hpp:
 
@@ -120,3 +121,5 @@ Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/Presenter.hpp:
 Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/MVPHeap.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/types.hpp:

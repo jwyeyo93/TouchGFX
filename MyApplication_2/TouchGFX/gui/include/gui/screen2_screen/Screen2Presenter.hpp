@@ -27,6 +27,26 @@ public:
 
     virtual ~Screen2Presenter() {};
 
+    void saveHour(int16_t hour)
+    {
+        model->saveHour(hour);
+	}
+
+    void saveMinute(int16_t minute)
+    {
+        model->saveHour(minute);
+	}
+
+    int16_t getHour()
+    {
+        return model->getHour();
+	}
+
+    int16_t getMinute()
+    {
+        return model->getMinute();
+	}
+
 private:
     Screen2Presenter();
 

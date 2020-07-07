@@ -39,6 +39,7 @@ TouchGFX/build/STM32H747I_DISCO/TouchGFX/generated/gui_generated/src/common/Fron
  Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/Presenter.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/MVPHeap.hpp \
  TouchGFX/gui/include/gui/model/Model.hpp \
+ Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/types.hpp \
  TouchGFX/gui/include/gui/common/FrontendHeap.hpp \
  TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendHeapBase.hpp \
  Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/transitions/NoTransition.hpp \
@@ -160,6 +161,8 @@ Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/Presenter.hpp:
 Middlewares/ST/TouchGFX/touchgfx/framework/include/mvp/MVPHeap.hpp:
 
 TouchGFX/gui/include/gui/model/Model.hpp:
+
+Middlewares/ST/TouchGFX/touchgfx/framework/include/touchgfx/hal/types.hpp:
 
 TouchGFX/gui/include/gui/common/FrontendHeap.hpp:
 
