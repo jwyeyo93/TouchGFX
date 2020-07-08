@@ -30,10 +30,23 @@ Screen1ViewBase::Screen1ViewBase() :
     overlay.setXY(0, 0);
     overlay.setBitmap(touchgfx::Bitmap(BITMAP_OVERLAY_ID));
 
+    scrollWheel1.setPosition(-4, 142, 100, 50);
+    scrollWheel1.setHorizontal(false);
+    scrollWheel1.setCircular(false);
+    scrollWheel1.setEasingEquation(touchgfx::EasingEquations::backEaseOut);
+    scrollWheel1.setSwipeAcceleration(10);
+    scrollWheel1.setDragAcceleration(10);
+    scrollWheel1.setNumberOfItems(10);
+    scrollWheel1.setSelectedItemOffset(0);
+
+    menuElement1.setXY(0, 0);
+
     add(box1);
     add(background);
     add(scrollWheel);
     add(overlay);
+    add(scrollWheel1);
+    add(menuElement1);
 }
 
 void Screen1ViewBase::setupScreen()
@@ -43,6 +56,8 @@ void Screen1ViewBase::setupScreen()
     {
         scrollWheelListItems[i].initialize();
     }
+    scrollWheel1.initialize();
+    menuElement1.initialize();
 }
 
 void Screen1ViewBase::updateItemCallbackHandler(touchgfx::DrawableListItemsInterface* items, int16_t containerIndex, int16_t itemIndex)

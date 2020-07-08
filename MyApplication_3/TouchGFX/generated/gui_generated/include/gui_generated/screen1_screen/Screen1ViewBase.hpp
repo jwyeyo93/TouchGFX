@@ -37,6 +37,8 @@ protected:
     touchgfx::ScrollWheel scrollWheel;
     touchgfx::DrawableListItems<MenuElement, 7> scrollWheelListItems;
     touchgfx::Image overlay;
+    touchgfx::ScrollWheel scrollWheel1;
+    MenuElement menuElement1;
 
 private:
     touchgfx::Callback<Screen1ViewBase, touchgfx::DrawableListItemsInterface*, int16_t, int16_t> updateItemCallback;

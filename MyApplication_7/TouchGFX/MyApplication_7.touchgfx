@@ -1,0 +1,142 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Components": [
+          {
+            "FileName": "__designer\\Blue_Textures_grey_wash_wall.png",
+            "Alpha": 255,
+            "OffsetX": 0,
+            "OffsetY": 0,
+            "Name": "backgroundImage",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Type": "TiledImage",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "UseAnimation": false,
+            "RenderingAlgorithm": "Nearest-neighbor",
+            "FileNameImage": "image00.png",
+            "LockBitmapToCenter": true,
+            "XBitmapPosition": 39.993021309011667,
+            "YBitmapPosition": 39.993021309011667,
+            "XAngle": 0.0,
+            "YAngle": 0.0,
+            "ZAngle": 0.0,
+            "Scale": 1.0,
+            "LockOrigoToCenter": true,
+            "XOrigo": 90.0,
+            "YOrigo": 90.0,
+            "ZOrigo": 300.0,
+            "CameraDistance": 300.0,
+            "Alpha": 255,
+            "Name": "textureMapperImage3D",
+            "X": 40,
+            "Y": 40,
+            "Width": 180,
+            "Height": 180,
+            "Type": "TextureMapper",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "UseAnimation": false,
+            "RenderingAlgorithm": "Nearest-neighbor",
+            "FileNameImage": "image01.png",
+            "LockBitmapToCenter": true,
+            "XBitmapPosition": 39.979781879634842,
+            "YBitmapPosition": 39.979781879634842,
+            "XAngle": 0.0,
+            "YAngle": 0.0,
+            "ZAngle": 0.0,
+            "Scale": 1.0,
+            "LockOrigoToCenter": true,
+            "XOrigo": 90.0,
+            "YOrigo": 90.0,
+            "ZOrigo": 300.0,
+            "CameraDistance": 300.0,
+            "Alpha": 255,
+            "Name": "textureMapperImage2D",
+            "X": 240,
+            "Y": 40,
+            "Width": 180,
+            "Height": 180,
+            "Type": "TextureMapper",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "Main",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication_7",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Main",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/TouchGFX/touchgfx",
+    "UIPath": ".",
+    "ApplicationTemplateName": "STM32H747I-DISCO",
+    "ApplicationTemplateVersion": "1.0.0",
+    "ApplicationTemplateDescription": "STM32H747I-DISCO Application Template",
+    "AvailableColorDepths": [
+      16,
+      24
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp",
+      "24": "LCD24bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj && touchgfx update_project --project-file=../EWARM/TouchGFX.ewp",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommand": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommand": "make -f ../gcc/Makefile -j8 flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape"
+  },
+  "Version": "4.13.0",
+  "CreatedBy": "4.13.0"
+}
